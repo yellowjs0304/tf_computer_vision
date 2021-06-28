@@ -7,50 +7,6 @@ Origin Git Repo : https://github.com/wikibook/dl-vision
 
 Blog : https://yjs-program.tistory.com/
 
-## :wrench: 대상 독자 및 환경
-
-코드는 [주피터](http://jupyter.org/) 노트북 형태로 제공한다. 따로 표기되지 않은 경우, 파이썬 3.5(이상) 및 텐서플로 2.0을 사용해 실행하면 된다. 설치 방법은 이 책에서 설명한다. ([numpy](http://www.numpy.org/), [matplotlib](https://matplotlib.org) 등과 같이 의존성을 관리하기 위해 [Anaconda](https://anaconda.org/)를 사용하는 것이 좋다.)
-
-또한 이 책에서 사용된 화면/도표의 컬러 이미지를 담은 PDF 파일도 제공한다. [여기를 클릭해 파일을 내려 받으면 된다.](https://www.packtpub.com/sites/default/files/downloads/9781788830645_ColorImages.pdf).
-
-### 온라인에서 주피터 노트북 학습하기
-
-제공된 코드와 결과를 살펴보고 싶다면 온라인으로 책의 깃허브 저장소를 접속하면 된다. 실제로 깃허브는 주피터 노트북을 렌더링하고 정적 웹 페이지로 표시 할 수 있다.
-그렇지만 깃허브 뷰어는 일부 스타일 서식과 대화형 콘텐츠를 무시한다. 이를 해결하고 최상의 상태로 보려면, 온라인에 업로드된 주피터 노트북을 읽기 위해 사용할 수 있는 공식 웹 플랫폼인 [주피터 nbviewer](https://nbviewer.jupyter.org)를 사용하는 것이 좋다. 이 웹사이트를 사용해 깃허브 저장소에 저장된 노트북을 렌더링할 수 있다. 따라서 여기서 제공하는 주피터 노트북은 다음 주소에서 읽을 수 있다.
-https://nbviewer.jupyter.org/github/PacktPublishing/Hands-On-Computer-Vision-with-TensorFlow-2
-
-### 컴퓨터에서 주피터 노트북 실행하기
-
-컴퓨터에서 이 문서를 읽고 실행하려면 먼저 주피터 노트북을 설치해야 한다. 파이썬 환경을 관리하고 배포하기 위해 이미 [아나콘다](https://www.anaconda.com)를 사용하고 있다면(이 책에서 권장하는 바이다) 주피터 노트북을 바로 사용할 수 있다(아나콘다와 함께 설치되기 때문이다). 다른 파이썬 배포판을 사용하고 주피터 노트북이 익숙하지 않다면, [설치 방법과 튜토리얼](https://jupyter.org/documentation)을 읽어보기 바란다.
-
-주피터 노트북을 컴퓨터에 설치했다면 이 책의 코드 파일이 포함된 디렉터리를 찾은 다음, 터미널을 열고 다음 명령어를 실행하라. 
-
-    $ jupyter notebook
-    
-웹 인터페이스는 각자 설정한 기본 브라우저에서 열린다. 거기에서 이 디렉터리를 찾아가 제공된 주피터 노트북을 열어서 읽고, 실행하거나 편집할 수 있다. 
-
-어떤 문서는 고성능 컴퓨팅 파워를 요구할 수 있는 고급 실험(규모가 큰 데이터셋에서 인식 알고리즘을 훈련하는 등)을 포함한다. 적절하게 하드웨어를 가속화하지 않고는(즉, 2장, _텐서플로 기초와 모델 훈련_에서 설명하듯이 적절한 NVIDIA GPU가 없다면), 이 스크립트를 수행하는 데 수 시간 또는 수 일이 걸릴 수 있다(적절한 GPU가 있더라도 가장 고급 예제는 꽤 많은 시간이 걸릴 수 있다). 
-
-### 구글 코랩에서 주피터 노트북 실행하기
-
-주피터 노트북을 직접 실행하거나 새로운 실험을 하고 싶지만 컴퓨터가 충분한 컴퓨팅 파워를 갖추지 못했다면 [Google Colab](https://colab.research.google.com)을 사용하는 것이 좋다. 코랩은 강력한 컴퓨터에서 계산 집약적인 스크립트를 실행하고자 하는 사람을 위해 구글에서 제공하는 클라우드 기반의 주피터 환경이다. 
-
-### 소프트웨어, 하드웨어 목록 
-
-다음 소프트웨어와 하드웨어를 사용하면 이 책(1~9장)에서 제시하는 코드 파일을 모두 실행할 수 있다. 
-
-| 장     | 소프트웨어 요구사항                                 | OS 요구사항                       |
-| ------ | --------------------------------------------------- | --------------------------------- |
-| 1~9    | Jupyter Notebook                                    | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 1~9    | Python 3.5 이상, NumPy, Matplotlib, Anaconda (선택) | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 2~9    | TensorFlow, tensorflow-gpu                          | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 3      | Scikit-Image                                        | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 4      | TensorFlow Hub                                      | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 6      | pydensecrf library                                  | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 7      | Vispy, Plyfile                                      | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 8      | opencv-python, tqdm, scikit-learn                   | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-| 9      | Android Studio, Cocoa Pods, Yarn                    | 윈도우, 맥OS X, 리눅스 중 한 가지 |
-
 ## :books: 목차
 
 - 1장 - [컴퓨터 비전과 신경망](https://yjs-program.tistory.com/176) / [코드](/Chapter01)
@@ -96,4 +52,50 @@ https://nbviewer.jupyter.org/github/PacktPublishing/Hands-On-Computer-Vision-wit
     - 9.3 - [감정 탐지 모델을 훈련시키고 모바일 기기를 위해 이 모델을 전환](./Chapter09/ch9_nb3_train_model.ipynb)
     - [iOS 앱](./Chapter09/coreml_ios)
     - [안드로이드 앱](./Chapter09/tf_lite_android)
-    - [Tensorflow.js 앱](./Chapter09/tfjs)
+    - [Tensorflow.js 앱](./Chapter09/tfjs)   
+
+
+## :wrench: 대상 독자 및 환경
+
+코드는 [주피터](http://jupyter.org/) 노트북 형태로 제공한다. 따로 표기되지 않은 경우, 파이썬 3.5(이상) 및 텐서플로 2.0을 사용해 실행하면 된다. 설치 방법은 이 책에서 설명한다. ([numpy](http://www.numpy.org/), [matplotlib](https://matplotlib.org) 등과 같이 의존성을 관리하기 위해 [Anaconda](https://anaconda.org/)를 사용하는 것이 좋다.)
+
+또한 이 책에서 사용된 화면/도표의 컬러 이미지를 담은 PDF 파일도 제공한다. [여기를 클릭해 파일을 내려 받으면 된다.](https://www.packtpub.com/sites/default/files/downloads/9781788830645_ColorImages.pdf).
+
+### 온라인에서 주피터 노트북 학습하기
+
+제공된 코드와 결과를 살펴보고 싶다면 온라인으로 책의 깃허브 저장소를 접속하면 된다. 실제로 깃허브는 주피터 노트북을 렌더링하고 정적 웹 페이지로 표시 할 수 있다.
+그렇지만 깃허브 뷰어는 일부 스타일 서식과 대화형 콘텐츠를 무시한다. 이를 해결하고 최상의 상태로 보려면, 온라인에 업로드된 주피터 노트북을 읽기 위해 사용할 수 있는 공식 웹 플랫폼인 [주피터 nbviewer](https://nbviewer.jupyter.org)를 사용하는 것이 좋다. 이 웹사이트를 사용해 깃허브 저장소에 저장된 노트북을 렌더링할 수 있다. 따라서 여기서 제공하는 주피터 노트북은 다음 주소에서 읽을 수 있다.
+https://nbviewer.jupyter.org/github/PacktPublishing/Hands-On-Computer-Vision-with-TensorFlow-2
+
+### 컴퓨터에서 주피터 노트북 실행하기
+
+컴퓨터에서 이 문서를 읽고 실행하려면 먼저 주피터 노트북을 설치해야 한다. 파이썬 환경을 관리하고 배포하기 위해 이미 [아나콘다](https://www.anaconda.com)를 사용하고 있다면(이 책에서 권장하는 바이다) 주피터 노트북을 바로 사용할 수 있다(아나콘다와 함께 설치되기 때문이다). 다른 파이썬 배포판을 사용하고 주피터 노트북이 익숙하지 않다면, [설치 방법과 튜토리얼](https://jupyter.org/documentation)을 읽어보기 바란다.
+
+주피터 노트북을 컴퓨터에 설치했다면 이 책의 코드 파일이 포함된 디렉터리를 찾은 다음, 터미널을 열고 다음 명령어를 실행하라. 
+
+    $ jupyter notebook
+    
+웹 인터페이스는 각자 설정한 기본 브라우저에서 열린다. 거기에서 이 디렉터리를 찾아가 제공된 주피터 노트북을 열어서 읽고, 실행하거나 편집할 수 있다. 
+
+어떤 문서는 고성능 컴퓨팅 파워를 요구할 수 있는 고급 실험(규모가 큰 데이터셋에서 인식 알고리즘을 훈련하는 등)을 포함한다. 적절하게 하드웨어를 가속화하지 않고는(즉, 2장, _텐서플로 기초와 모델 훈련_에서 설명하듯이 적절한 NVIDIA GPU가 없다면), 이 스크립트를 수행하는 데 수 시간 또는 수 일이 걸릴 수 있다(적절한 GPU가 있더라도 가장 고급 예제는 꽤 많은 시간이 걸릴 수 있다). 
+
+### 구글 코랩에서 주피터 노트북 실행하기
+
+주피터 노트북을 직접 실행하거나 새로운 실험을 하고 싶지만 컴퓨터가 충분한 컴퓨팅 파워를 갖추지 못했다면 [Google Colab](https://colab.research.google.com)을 사용하는 것이 좋다. 코랩은 강력한 컴퓨터에서 계산 집약적인 스크립트를 실행하고자 하는 사람을 위해 구글에서 제공하는 클라우드 기반의 주피터 환경이다. 
+
+### 소프트웨어, 하드웨어 목록 
+
+다음 소프트웨어와 하드웨어를 사용하면 이 책(1~9장)에서 제시하는 코드 파일을 모두 실행할 수 있다. 
+
+| 장     | 소프트웨어 요구사항                                 | OS 요구사항                       |
+| ------ | --------------------------------------------------- | --------------------------------- |
+| 1~9    | Jupyter Notebook                                    | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 1~9    | Python 3.5 이상, NumPy, Matplotlib, Anaconda (선택) | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 2~9    | TensorFlow, tensorflow-gpu                          | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 3      | Scikit-Image                                        | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 4      | TensorFlow Hub                                      | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 6      | pydensecrf library                                  | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 7      | Vispy, Plyfile                                      | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 8      | opencv-python, tqdm, scikit-learn                   | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+| 9      | Android Studio, Cocoa Pods, Yarn                    | 윈도우, 맥OS X, 리눅스 중 한 가지 |
+
