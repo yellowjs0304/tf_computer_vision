@@ -5,7 +5,7 @@ Origin Git Repo : https://github.com/wikibook/dl-vision
 [《실전! 텐서플로2를 활용한 딥러닝 컴퓨터 비전》](https://book.naver.com/bookdb/book_detail.nhn?bid=16365755)   
 구글이 내놓은 오픈소스 머신러닝 라이브러리의 새로운 버전인 텐서플로 2를 기반으로 한다. 
 
-Blog : https://yjs-program.tistory.com/category/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/Computer%20Vision
+### [📖포스팅 Blog](https://yjs-program.tistory.com/category/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/Computer%20Vision)
 
 ## :books: 목차
 
