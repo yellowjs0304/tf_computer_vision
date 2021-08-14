@@ -11,9 +11,9 @@ Origin Git Repo : https://github.com/wikibook/dl-vision
 
 - 1장 - [컴퓨터 비전과 신경망](https://yjs-program.tistory.com/176) / [코드](/Chapter01)
     - 1.1 - [신경망을 처음부터 만들고 훈련시키기](./Chapter01/kr_ch1_nb1_build_and_train_neural_network_from_scratch.ipynb)
-- 2장 - [텐서플로 기초와 모델 훈련](/Chapter02)
+- 2장 - [텐서플로 기초와 모델 훈련](https://yjs-program.tistory.com/178) / [코드](/Chapter02)
     - 2.1 - [케라스로 모델 훈련시키기](./Chapter02/ch2_nb1_mnist_keras.ipynb)
-- 3장 - [현대 신경망](/Chapter03)
+- 3장 - [현대 신경망](https://yjs-program.tistory.com/180) / [코드](/Chapter03)
     - 3.1 - [CNN 기초 연산 살펴보기](./Chapter03/ch3_nb1_discover_cnns_basic_ops.ipynb)
     - 3.2 - [텐서플로 2와 케라스로 첫 CNN을 만들고 훈련시키기](./Chapter03/ch3_nb2_build_and_train_first_cnn_with_tf2.ipynb)
     - 3.3 - [고급 최적화 모델 실험](./Chapter03/ch3_nb3_experiment_with_optimizers.ipynb)
